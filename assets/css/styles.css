@@ -840,7 +840,7 @@ body.light-theme {
 }
 /*=============== FOOTER ===============*/
 .footer {
-  background-color: var(--first-color);
+  background-color: none; /* var(--first-color);*/
 }
 
 .footer__container {
