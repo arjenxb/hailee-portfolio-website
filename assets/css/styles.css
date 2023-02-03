@@ -849,7 +849,7 @@ body.light-theme {
 
 .footer__title,
 .footer__link {
-  color: var(--body-color);
+  color: white; /*var(--body-color);*/
 }
 
 .footer__title {
