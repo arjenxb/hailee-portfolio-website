@@ -1224,7 +1224,7 @@ body.light-theme {
 
 
 
-h2 {
+h12 {
 
     position: relative;
 
@@ -1238,7 +1238,7 @@ h2 {
 
 }
 
-h2::before {
+h12::before {
 
     content: attr(data-text);
 
