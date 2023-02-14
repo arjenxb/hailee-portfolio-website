@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Github Profil Arama</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./github.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class='container'>
+  <article class='control'>
+    <section class='control__header'>
+      <header class='title'>
+        <h1 class='title__text'>Github</h1>
+        <button class='theme' data-value='toggle'>
+          <p class='theme__text'>Dark</p>
+          <div class='theme__item'>
+            <img class='theme__icon svg' id='ti-1' src='https://raw.githubusercontent.com/frontendmentorio/todo-app/97a48c66af62577a63aa00a2980cea020413b783/images/icon-moon.svg'>
+          </div>
+        </button>
+      </header>
+    </section>
+    <section class='control__form'>
+      <div class='input'>
+        <label class='input__label' for='text'>Github kullanıcı adını arayın</label>
+        <input autocomplete='off' class='input__field' id='text' placeholder='Github kullanıcı adını arayın' type='text' value=''>
+          <img class='input__icon svg' id='ii-1' src='https://raw.githubusercontent.com/primer/octicons/5090b7acab73dc3f0f25936fceefdeb16bc19d2f/icons/search-24.svg'>
+        </input>
+        <button class='input__button' id='submit'>Ara</button>
+      </div>
+    </section>
+    <section class='control__output'>
+      <div class='control__validation' data-value='validate'>Github kullanıcısı bulunamadı</div>
+      <div class='card' data-value='record'>
+        <div class='card__header'>
+          <div class='user'>
+            <div class='user__avatar'>
+              <img class='user__image' data-value='avatar'>
+            </div>
+          </div>
+          <div class='user__account'>
+            <div class='user__detail'>
+              <h2 class='user__text user__text--layout user__text--color' data-value='name'></h2>
+              <a class='user__text user__text--link' data-value='html'></a>
+            </div>
+            <div class='user__text' data-value='created'></div>
+          </div>
+        </div>
+        <div class='card__body'>
+          <div class='user__text user__text--opacity' data-value='bio'></div>
+          <div class='user__detail'>
+            <ul class='stat'>
+              <li class='stat__item'>
+                <p class='stat__text stat__text--color'>Depolar</p>
+                <p class='stat__text stat__text--layout stat__text--color' data-value='repos'></p>
+              </li>
+              <li class='stat__item'>
+                <p class='stat__text stat__text--color'>Takipçi</p>
+                <p class='stat__text stat__text--layout stat__text--color' data-value='followers'></p>
+              </li>
+              <li class='stat__item'>
+                <p class='stat__text stat__text--color'>Takip edilen</p>
+                <p class='stat__text stat__text--layout stat__text--color' data-value='following'></p>
+              </li>
+            </ul>
+          </div>
+          <div class='card__footer'>
+            <div class='user__detail'>
+              <div class='social'>
+                <div class='social__item'>
+                  <div class='social__content'>
+                    <img class='social__icon svg' id='si-1' src='https://raw.githubusercontent.com/primer/octicons/5090b7acab73dc3f0f25936fceefdeb16bc19d2f/icons/location-24.svg'>
+                    <p class='social__text' data-value='location'></p>
+                  </div>
+                  <div class='social__content'>
+                    <img class='social__icon svg' id='si-2' src='https://raw.githubusercontent.com/primer/octicons/5090b7acab73dc3f0f25936fceefdeb16bc19d2f/icons/link-24.svg'>
+                    <a class='social__link' data-value='blog'></a>
+                  </div>
+                </div>
+                <div class='social__item'>
+                  <div class='social__content'>
+                    <img class='social__icon social__fill svg' id='si-3' src='https://raw.githubusercontent.com/tabler/tabler-icons/132842cb153820037bb7fa695655f6606e0f14e7/icons/brand-twitter.svg'>
+                    <a class='social__link' data-value='twitter'></a>
+                  </div>
+                  <div class='social__content'>
+                    <img class='social__icon svg' id='si-4' src='https://raw.githubusercontent.com/primer/octicons/5090b7acab73dc3f0f25936fceefdeb16bc19d2f/icons/organization-24.svg'>
+                    <p class='social__text' data-value='company'></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</main>
+<!-- partial -->
+  <script  src="./github.js"></script>
+
+</body>
+</html>

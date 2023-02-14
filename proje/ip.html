@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr" >
+<head>
+  <meta charset="UTF-8">
+  <title>IP ADRES İZLEME</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://unpkg.com/leaflet@1.8.0/dist/leaflet.css'><link rel="stylesheet" href="./ip.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  <article class='control'>
+    <section class='control__header'>
+      <div class='control__content container'>
+        <h1>IP Adresi İzleyici</h1>
+        <div class='control__form'>
+          <div class='input'>
+            <label class='input__label' for='text'>Herhangi bir IP Adresi veya Website Alan adı arayın</label>
+            <input autocomplete='off' class='input__field' id='text' placeholder='Herhangi bir IP adresi veya website alan adı arayın' type='text' value=''>
+            <button aria-label='Search' class='input__button' id='submit'>
+              <img alt='Search' class='input__icon svg' src='https://raw.githubusercontent.com/frontendmentorio/ip-address-tracker/e03e4f0e715ac9bd7226e16a5d3e83b4bea7b242/images/icon-arrow.svg'>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='control__output'>
+      <div class='control__content control__dynamic control__animate'>
+        <div class='control__validation' data-value='validate'>Geçerli bir IP adresi veya Website alan adı girmediğiniz anlaşılıyor. Bir IP adresi '8.8.8.8' veya '172.67.150.108' gibi görünür. Bu arada, bir alan adı 'google.com' veya 'mozilla.org' gibi görünür.</div>
+        <div class='loader'>
+          <div class='loader__item'></div>
+        </div>
+        <ul class='stat' data-value='record'>
+          <li class='stat__item'>
+            <h2 class='stat__header'>IP Adresi</h2>
+            <p class='stat__text' data-value='ip'></p>
+          </li>
+          <li class='stat__item'>
+            <h2 class='stat__header'>Konum</h2>
+            <p class='stat__text' data-value='location'></p>
+          </li>
+          <li class='stat__item'>
+            <h2 class='stat__header'>Saat dilimi</h2>
+            <p class='stat__text' data-value='timezone'></p>
+          </li>
+          <li class='stat__item'>
+            <h2 class='stat__header'>ISP</h2>
+            <p class='stat__text' data-value='isp'></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class='control__body'>
+      <div class='resource' id='map'></div>
+      <button class='resource__button' id='option'>Harita Değiştir</button>
+    </section>
+  </article>
+</main>
+<!-- partial -->
+  <script src='https://unpkg.com/leaflet@1.8.0/dist/leaflet.js'></script><script  src="./ip.js"></script>
+
+</body>
+</html>
